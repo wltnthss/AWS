@@ -26,8 +26,6 @@ AWS를 알기 전에 **클라우드 컴퓨팅**이라는 개념에 대해 먼저
 - Amazon Web Services 로 클라우드 컴퓨팅의 대표적 기업
 - 컴퓨팅, 운영체제, 네트워킹, 스토리지, 응용프로그램(웹서버, DB, CRM)등을 지원합니다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/9cd1d93b-59f1-42b3-9abe-8d2c7f0dd4b0/9899922e-5cb9-4a72-ae9a-7dddad59bbf2/Untitled.png)
-
 **AWS 구성**
 
 - **Region** - 복수개의 데이터센터의 물리적 위치 ex) 서울에 존재하는 데이터 센터
