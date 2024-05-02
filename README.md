@@ -61,31 +61,6 @@ AWS를 알기 전에 **클라우드 컴퓨팅**이라는 개념에 대해 먼저
 <script src="${pageContext.request.contextPath}/resources/js/admin/admin.js"></script>
 
 <form id="userSearch" action="${pageContext.request.contextPath}/admin/user" method="get">
-
-<%-- JS 파일 적용 --%>
-<script>
-    sessionStorage.setItem("contextpath", "${pageContext.request.contextPath}");
-
-$.ajax({
-          type: 'DELETE',
-          url: sessionStorage.getItem("contextpath") + '/admin/coupondelete',
-          data: JSON.stringify(valueArr),
-          contentType: "application/json",
-          success: function (res){
-              console.log('res => ' + res)
-              if(res > 0){
-                  alert('삭제되었습니다.');
-                  location.href = sessionStorage.getItem("contextpath")+ "/admin/coupondelete";
-              }else{
-                  alert('삭제 실패');
-                  location.href = sessionStorage.getItem("contextpath")+ "/admin/coupondelete";
-              }
-          },
-          error: function (e) {
-              console.error("삭제 실패", e);
-          }
-      });
-</script>
 ```
 
 - was 파일명이 들어가는 방법은 해결하지 못했으나 jsp 파일 경로내에 동적 경로를 추가함으로써 운영에도 정상적으로 반영되는 것
